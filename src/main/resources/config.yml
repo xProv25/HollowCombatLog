@@ -1,0 +1,57 @@
+# ╔═══════════════════════════════════════════╗
+# ║        HollowCombatLog - Config           ║
+# ║              by Prov_25                   ║
+# ╚═══════════════════════════════════════════╝
+
+# Durata del combat log in secondi
+combat-duration: 20
+
+# Comandi permessi durante il combat log (senza /)
+allowed-commands:
+  - "msg"
+  - "tell"
+  - "r"
+  - "reply"
+  - "spawn"
+
+# ─── RADIUS COMBAT LOG ───────────────────────────────────────────────
+# Se abilitato, due giocatori entrano in combat solo se sono nel raggio
+# e il combat si disattiva automaticamente quando si allontanano
+radius:
+  enabled: false
+  distance: 20.0
+
+# ─── FILTRO MONDI ────────────────────────────────────────────────────
+# Modalità: WHITELIST = il combatlog è attivo SOLO nei mondi elencati
+#           BLACKLIST = il combatlog è attivo in TUTTI i mondi TRANNE quelli elencati
+world-filter:
+  mode: BLACKLIST   # WHITELIST o BLACKLIST
+  worlds:
+    - "spawn"
+
+# ─── MESSAGGI ────────────────────────────────────────────────────────
+messages:
+  prefix: "&8[&cHCL&8]"
+  enter-combat: "&cSei entrato in &cCombat&c! Hai {time}s."
+  leave-combat: "&aSei uscito dal Combat."
+  command-blocked: "&cNon puoi usare quel comando mentre sei in Combat!"
+  player-killed: "&cSei stato eliminato in Combat da &e{killer}&c!"
+  logout-kill: "&e{player} &cè fuggito dal combat! &7(CombatLog)"
+  radius-left: "&aSei uscito dal raggio di combat."
+  world-disabled: "&7Il Combat Log non è attivo in questo mondo."
+
+# ─── SUBTITLE ────────────────────────────────────────────────────────
+subtitle:
+  enabled: true
+  # {time} = secondi rimasti
+  format: "&c⚔ Combat: &f{time}s"
+  fade-in: 0
+  stay: 25
+  fade-out: 5
+
+# ─── KILL ON LOGOUT ──────────────────────────────────────────────────
+# Se true, il giocatore viene ucciso se si disconnette durante il combat
+kill-on-logout: true
+
+# ─── DEBUG ───────────────────────────────────────────────────────────
+debug: false

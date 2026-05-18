@@ -1,0 +1,21 @@
+name: HollowCombatLog
+version: 1.0.0
+main: me.prov25.hollowcombatlog.HollowCombatLog
+api-version: '1.21'
+author: Prov_25
+description: Advanced Combat Log system with radius support and world filtering.
+
+commands:
+  combatlog:
+    description: Main command for HollowCombatLog
+    aliases: [hcl, combat]
+    usage: /combatlog <reload|status|force>
+    permission: hollowcombatlog.admin
+
+permissions:
+  hollowcombatlog.admin:
+    description: Access to admin commands
+    default: op
+  hollowcombatlog.bypass:
+    description: Bypass combat log
+    default: false

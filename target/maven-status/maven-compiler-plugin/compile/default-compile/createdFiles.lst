@@ -1,0 +1,10 @@
+me\prov25\hollowcombatlog\utils\Logger.class
+me\prov25\hollowcombatlog\commands\CombatLogCommand.class
+me\prov25\hollowcombatlog\managers\CombatManager.class
+me\prov25\hollowcombatlog\managers\CombatManager$3.class
+me\prov25\hollowcombatlog\managers\CombatManager$1.class
+me\prov25\hollowcombatlog\utils\ColorUtils.class
+me\prov25\hollowcombatlog\listeners\PlayerListener.class
+me\prov25\hollowcombatlog\managers\CombatManager$2.class
+me\prov25\hollowcombatlog\HollowCombatLog.class
+me\prov25\hollowcombatlog\listeners\CombatListener.class
